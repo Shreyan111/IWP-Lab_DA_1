@@ -1,0 +1,253 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyan Sanyal</title>
+    <link rel="shortcut icon" href="./Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="CSS/skills.css">
+    <link rel="stylesheet" href="CSS/Projects.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/contactIcon.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="CSS/navigation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="./JS/typeWriter.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href=""><img src="./Logo.svg" alt=""></a>
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <menu>
+            <hr id="hr1">
+            <hr id="hr2">
+            <hr id="hr3">
+        </menu>
+    </nav>
+    <div class="phoneMenu">
+        <h2><a href="#About" onclick="hideMenu();">About</a></h2>
+        <h2><a href="#Skills" onclick="hideMenu();">Skills</a></h2>
+        <h2><a href="#Projects" onclick="hideMenu();">Projects</a></h2>
+        <h2><a href="#Contact" onclick="hideMenu();">Contact</a></h2>
+    </div>
+
+    <!-- Left Section -->
+    <section class="left socials">
+        <a href="https://www.linkedin.com/in/shreyan-sanyal-41937b1b0/" target="_blank"><img src="icons/linkedin.svg"
+                alt="LinkedIn"></a>
+        <a href="https://github.com/Shreyan111" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+        <hr>
+    </section>
+
+    <div class="contactButton">
+        <div class="first">
+            <div class="second" style="--i:1">
+                <div class="third" style="--i:2">
+                    <div class="fourth" style="--i:3"></div>
+                </div>
+            </div>
+        </div>
+        <img src="./icons/contact.svg" alt="" class="contactIcon">
+        <img src="./icons/close.svg" alt="" class="closeIcon">
+    </div>
+
+    <div class="home">
+        <div class="content">
+            <h2>Hello, My name is</h2>
+            <div>
+                <h1>Shreyan Sanyal</h1>
+            </div>
+            <h2>I'm a <span class="role" data-wait="1000"
+                    data-words='["Web Developer.","Competitive Programmer.","Passionate Learner."]'
+                    data-wait='3000'></span></h2>
+        </div>
+        <!-- For Background Animation -->
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+        <div class="box4 box"></div>
+        <div class="box5 box"></div>
+    </div>
+
+    <!-- About Page -->
+    <div class="about part" id="About">
+        <div class="title">
+            <h1>About Me</h1>
+            <hr>
+        </div>
+        <div class="wrap">
+            <div class="heading" data-aos="fade-right">
+                <h2>Shreyan Sanyal</h2>
+                <h3><i><strong>I love exploring new things!</strong></i></h3>
+            </div>
+            <div class="aboutMe" data-aos="fade-right" data-aos-anchor=".heading">
+                <p>I'm a 3<sup>rd</sup> Year Computer Science Engineering Student at <a href="https://www.vit.ac.in/"
+                        target="_blank">Vellore Institute of Technology</a>, Vellore with current
+                    <span>9.00 CGPA.</span> I am primarily interested in <b>Competitive Programming</b>,
+                    <b>Data
+                        Structures and Algorithms</b>, <b>Web Development.</b>
+                </p>
+                <p style="color: red;">I enjoy learning new skills and implementing them in real life!<br>
+                    I am a believer of peer learning and always ready to share my knowledge.</p>
+            </div>
+            <a><button><i>Let's Talk</i></button></a>
+            <div class="img" data-aos="fade-left">
+                <img src="./images/ProfilePic.png" alt="Picture of Shreyan Sanyal">
+            </div>
+        </div>
+    </div>
+    <!-- Skills Page -->
+    <div class="skills part" id="Skills">
+        <div class="title">
+            <h1>Skills</h1>
+            <hr>
+        </div>
+        <div class="wrap">
+            <p data-aos="fade-right" class="skillText">An individual eager to learn and explore new fields of life and
+                technology, with good listening
+                skills and fast learning abilities.</p>
+            <div class="interest" data-aos="fade-right" data-aos-anchor=".skillText">
+                <h3>Interest</h3>
+                <div>
+                    <p>1) Web Development</p>
+                    <p>2) Data Structures and Algorithms</p>
+                    <p>3) Competitive Programming</p>
+                </div>
+            </div>
+
+            <div class="skillIteams" data-aos="fade-left">
+                <div class="iteam iteam1">
+                    <div class="iteamCircle">
+                        <img src="./icons/c.svg" alt=" C Language">
+                    </div>
+                    <p>C Language</p>
+                </div>
+                <div class="iteam iteam2">
+                    <div class="iteamCircle">
+                        <img src="./icons/cpp.svg" alt="C++ Language">
+                    </div>
+                    <p>C++ Language</p>
+                </div>
+                <div class="iteam iteam3">
+                    <div class="iteamCircle">
+                        <img src="./icons/javascript.svg" alt="JavaScript">
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+                <div class="iteam iteam4">
+                    <div class="iteamCircle">
+                        <img src="./icons/html5.svg" alt="HTML5">
+                    </div>
+                    <p>HTML5</p>
+                </div>
+                <div class="iteam iteam5">
+                    <div class="iteamCircle">
+                        <img src="./icons/css3.svg" alt="CSS3">
+                    </div>
+                    <p>CSS3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects Section -->
+    <div class="projects part" id="Projects">
+        <div class="title">
+            <h1>Projects</h1>
+            <hr>
+        </div>
+        <div class="wrap">
+            <div class="projectDetails">
+                <img src="./images/project-healer.png" class="projectImg healerImg" alt="Image of Project"
+                    data-aos="fade-right">
+                <div class="projectText healerText" data-aos="fade-left">
+                    <h2>HackMate</h2>
+                    <div class="details">
+                        <p>This was a team project. Which was build during the <a href="https://hacknitr.tech/"
+                                target="_blank">Hack</a><br>
+                            it is about forming teams with random participants. It contains various sections like
+                            <span>team formation</span>,<span>list of hackathons</span> and <span>Moodify</span> and
+                            also it gives some
+                            features like <span>Interface</span>, <span>Mandala Art</span> and <span>Color
+                                Game</span>.
+                        </p>
+                    </div>
+                    <p><span>HTML5</span> <span>CSS3</span> <span>JavaScript</span></p>
+                    <div class="platforms">
+                        <a href="https://github.com/Drishty06/Healer" target="_blank"><img
+                                src="./icons/github-project.svg" alt="Link for githu repo"></a>
+                        <a href="https://drishty06.github.io/Healer/" target="_blank"><img src="./icons/link.svg"
+                                alt="Link for project"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projectDetails">
+                <img src="./images/guess-the-color.jpg" class="projectImg colorGuessImg" alt="Image of Project"
+                    data-aos="fade-right">
+                <div class="projectText colorGuessText" data-aos="fade-left">
+                    <h2>Samarth</h2>
+                    <div class="details">
+                        <p>This was a personal project based on helping people suffering from various disabilities.
+                        </p>
+                    </div>
+                    <p><span>HTML5</span> <span>CSS3</span> <span>JavaScript</span></p>
+                    <div class="platforms">
+                        <a href="" target="_blank"><img
+                                src="./icons/github-project.svg" alt="Link for githu repo"></a>
+                        <a href="" target="_blank"><img
+                                src="./icons/link.svg" alt="Link for project"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Me -->
+    <div class="contact part" id="Contact">
+        <div class="title">
+            <h1>Contact</h1>
+            <hr>
+        </div>
+        <div class="wrap">
+            <h3 data-aos="zoom-in">My inbox and social medias are always open. Whether you have a question or just want
+                to say hello, I
+                will try my best to get back to you! Feel free to contact me about any relevant opportunity or just a
+                simple talk.</h3>
+            <a href=""><button>Mail Me</button></a>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/shreyan-sanyal-41937b1b0/" target="_blank"><img
+                        src="icons/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/Shreyan111" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+            </div>
+        </div>
+        <footer>
+            <span class="footer" data-wait="500"
+                data-words='["I love to code.","Creating better version of mine!!","Searching for opportunities.","Learning..."]'></span>
+        </footer>
+    </div>
+
+</body>
+
+</html>

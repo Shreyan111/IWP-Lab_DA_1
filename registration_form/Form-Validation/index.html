@@ -1,0 +1,123 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>PAT REGISTRATION FORM</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form_control">
+                <label>Name</label>
+                <input type="text" name="name" id="username" placeholder="Enter your full name" autocomplete="off"
+                    required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Enter valid name</small>
+            </div>
+            <div class="form_control">
+                <label>Registration Number</label>
+                <input type="text" name="regno" id="regno" placeholder="Enter your Registration Number" autocomplete="off" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Enter valid Registration</small>
+            </div>
+            <div class="form_control">
+                <label>EMAIL ID</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" autocomplete="off" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Enter valid Email</small>
+            </div>
+            <div class="form_control">
+                <label>Phone Number</label>
+                <input type="number" name="phone" id="phone" placeholder="Enter your phone number" autocomplete="off"
+                    required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Enter valid phone number</small>
+            </div>
+            <div class="form_control">
+                <label>Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password"
+                    autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Enter valid password</small>
+            </div>
+            <div class="form_control">
+                <label>Confirm Password</label>
+                <input type="password" name="confirmpassword" id="cpassword" placeholder="Re-Enter your password"
+                    autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Enter valid password</small>
+            </div>
+            <div class="form_control">
+                <label>Date of Birth</label>
+                <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            </div>
+            <div class="form_control">
+                <label>CGPA (Out of 10)</label>
+                <input type="number" name="cgpa" id="cgpa" placeholder="Enter your CGPA" autocomplete="off" required>
+            </div>
+            <div class="form_control">
+                <label>Gender</label>
+                <br>
+                <div class="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="Gender" value="Male">
+                </div>
+                <div class="female">
+                    <label for="male">Female</label>
+                    <input type="radio" id="female" name="Gender" value="Female">
+                </div>
+                <div class="oth">
+                    <label for="male">Other</label>
+                    <input type="radio" id="other" name="Gender" value="Other">
+                </div>
+            </div>
+            <div class="form_control">
+                <label>Graduating Year</label>
+                <select name="years" id="years">
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                </select>
+            </div>
+            <div class="form_control">
+                <label>File</label>
+                <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile"><br><br>
+            </div>
+            <div class="form_control">
+                <label>Message</label>
+                <textarea id="message" name="message" rows="5" cols="50" placeholder="Write your message here..."
+                    required></textarea>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <input type="submit" value="submit" class="btn">
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
